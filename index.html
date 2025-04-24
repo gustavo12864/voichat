@@ -4,15 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VoiChat</title>
+  <title>VoiChat - Fort Minor Theme</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 2rem; }
-    button { font-size: 1.2rem; padding: 0.6rem 1.2rem; }
-    input { padding: 0.5rem; font-size: 1rem; width: 60%; }
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0f0f0f;
+      color: #00ff99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #00ff99;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 0.7rem 1.4rem;
+      background-color: #00ff99;
+      color: #0f0f0f;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      box-shadow: 0 0 8px #00ff99;
+    }
+
+    button:hover {
+      background-color: #0f0f0f;
+      color: #00ff99;
+      border: 1px solid #00ff99;
+    }
+
+    input {
+      padding: 0.6rem;
+      font-size: 1rem;
+      width: 80%;
+      border: none;
+      background-color: #1a1a1a;
+      color: #00ff99;
+      margin-top: 1rem;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 0 6px #00ff99;
+    }
+
+    #room-joiner {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
-  <h1>🔊 VoiChat</h1>
+  <h1>🎤 VoiChat</h1>
   <div id="room-creator">
     <button onclick="createRoom()">Criar Sala</button>
   </div>
