@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VoiChat - Fort Minor Theme</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
     body {
       font-family: 'Share Tech Mono', monospace;
       background-color: #0f0f0f;
@@ -17,11 +19,13 @@
       height: 100vh;
       margin: 0;
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
       text-shadow: 0 0 10px #00ff99;
     }
+
     button {
       font-size: 1.2rem;
       padding: 0.7rem 1.4rem;
@@ -33,11 +37,13 @@
       transition: background-color 0.2s ease;
       box-shadow: 0 0 8px #00ff99;
     }
+
     button:hover {
       background-color: #0f0f0f;
       color: #00ff99;
       border: 1px solid #00ff99;
     }
+
     input {
       padding: 0.6rem;
       font-size: 1rem;
@@ -50,6 +56,7 @@
       border-radius: 4px;
       box-shadow: 0 0 6px #00ff99;
     }
+
     #room-joiner {
       margin-top: 1rem;
     }
@@ -64,15 +71,6 @@
     <p>Compartilhe este link com seu amigo:</p>
     <input type="text" id="room-link" readonly>
   </div>
-
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const hasRoom = urlParams.has("room");
-    if (hasRoom) {
-      document.getElementById("room-creator").style.display = "none";
-    }
-  </script>
-
   <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
   <script src="script.js"></script>
 </body>
