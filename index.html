@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiChat</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; }
+    button { font-size: 1.2rem; padding: 0.6rem 1.2rem; }
+    input { padding: 0.5rem; font-size: 1rem; width: 60%; }
+  </style>
+</head>
+<body>
+  <h1>🔊 VoiChat</h1>
+  <div id="room-creator">
+    <button onclick="createRoom()">Criar Sala</button>
+  </div>
+  <div id="room-joiner" style="display:none;">
+    <p>Compartilhe este link com seu amigo:</p>
+    <input type="text" id="room-link" readonly>
+  </div>
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
